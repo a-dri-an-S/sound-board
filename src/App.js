@@ -6,6 +6,7 @@ import Container from './components/Container';
 import A1 from './assets/audio/go-to-hell.wav';
 import A2 from './assets/audio/kiss-my-butt.wav';
 import A3 from './assets/audio/shut-up.wav';
+import img from './assets/image/logo.svg'
 
 function App() {
 
@@ -25,7 +26,13 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Lil' Bastards Sound Board</h1>
+      <h1 className="header">
+        <img
+          className="header-img"
+          src={img}
+          alt="Li'l-Bastard"
+        />
+      </h1>
       <Container 
         audioTracks={audioTracks}
       />

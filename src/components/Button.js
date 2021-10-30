@@ -1,6 +1,6 @@
 const Button = ({ name, handleClick }) => {
     return (
-        <div className="sound-board-btn">
+        <div className="sound-board-btns">
             <button 
                 className="btn" 
                 name={name}

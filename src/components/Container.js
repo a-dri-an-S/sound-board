@@ -4,10 +4,11 @@ const Container = ({ audioTracks }) => {
 
     console.log(audioTracks)
     return ( 
-        <section>
-            {audioTracks.map(trck => {
+        <section className="btn-container">
+            {audioTracks.map((trck, idx) => {
                 return (
-                    <Button 
+                    <Button
+                        key={idx}
                         name={trck.name}
                         handleClick={trck.handleClick}
                     />
